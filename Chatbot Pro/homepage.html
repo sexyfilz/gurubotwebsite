@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guru Bot - Movie Finder</title>
+  <link rel="stylesheet" href="css/mystyle.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel= "stylesheet" href= "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <section id= "nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-bars"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#top">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about-us">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Guru Bot</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</section>
+
+<!----------------banner section------------------>
+
+<section id="banner">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<p>GURU BOT</p>
+<p class="promo-title">Best Movie Finder</p>
+<a href="https://www.youtube.com/"><img src="images/button.png" class="play-btn"> Watch Tutorial</a>
+</div>
+<div class="col-md-6 text-center">
+<img src="images/sven.png" class="img-fluid">
+</div>
+</div>
+</div>
+</section>
+
+<!--------Services Section------------>
+
+<section id="services">
+<div class="container text-center">
+<h1 class="title">GURU BOT SERVICES</h1>
+<div class="row text-center">
+<div class="cold-md-4 services">
+<img src="images/popcorn.jpg" class="service-img">
+<h4>Title</h4>
+<p>Movie Title</p>
+</div>
+<div class="cold-md-4 services">
+<img src="images/popcorn.jpg" class="service-img">
+<h4>Genre</h4>
+<p>Movie Genre</p>
+</div>
+<div class="cold-md-4 services">
+<img src="images/popcorn.jpg" class="service-img">
+<h4>Popular</h4>
+<p>Trending Movie</p>
+</div>
+</div>
+<a href="code.html"><button type="button" class="btn btn-primary">Chatbot Code</button></a>
+</div>
+</section>
+
+<!------------About Us----------->
+
+<section id="about-us">
+<div class ="container">
+<h1 class="title text-center">Why Us?</h1>
+<div class="row">
+<div class="col-md-6 about-us">
+<p class="about-title">Because We ....</p>
+  <ul>
+    <li>Believe in the force</li>
+    <li>Believe in the force</li>
+    <li>Believe in the force</li>
+    <li>Believe in the force</li>
+    <li>Believe in the force</li>
+    <li>Believe in the force</li>
+    <li>Believe in the force</li>
+  </ul>
+</div>
+<div class="col-md-6">
+<img src="images/starwars.png" class="img-fluid">
+</div>
+</div> 
+</div>
+</section>
+
+<!-------------Intro-------->
+<section id="intro">
+<div cllass="container">
+<h1 class="title text-center">What is Guru Bot?</h1>
+<div class="row offset-1">
+<div class="col-md-5 intro">
+  <p>Guru Bot is a chatbot which is used to find movies based using Microsoft Bot Framework. </p>
+  <img src="images/filz.jpg">
+  <p class="user-details"><b>Filbert</b><br> Guru Bot Founder</p>
+</div>
+<div class="col-md-5 intro">
+  <p>Guru Bot is a chatbot which is used to find movies based on TMDB API. </p>
+  <img src="images/pudge.jpg">
+  <p class="user-details"><b>Pudge</b><br> Guru Bot Co-Founder</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-----------Contact section-------------->
+<section id="contact">
+<div class="container text-center">
+<p>FIND US ON SOCIAL MEDIA</p>
+  <div class="social-icons">
+    <a href="https://www.facebook.com"><img src="images/facebook.png"></a>
+    <a href="https://www.instagram.com/f1lz/"><img src="images/instagram.png"></a>
+    <a href="https://www.twitter.com"><img src="images/twitter.png"></a>
+  </div>
+</div>
+</section>
+
+<!-----------Smooth Scroll-------->
+<script type="smooth-scroll.js"></script>
+<script >
+var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+
+<!-------Chatbot------>
+<iframe id="bot" src='https://webchat.botframework.com/embed/GuruBots?s=PXuX-RzeEJ4.VQWkX4jsAzQfO1YvFXRY3rVvG1jM_3AGUtaltEDG1uk'></iframe>
+<div class="chat_header" onclick="openForm()">
+  <h1 class="chat_heading">Chat</h1>
+</div>
+
+<div class="chatpop-head" id="headpop">
+<h4 class="chatpop">Guru Bot</h1>
+</h4>
+
+<img src="images/xbutton.png" id="closebtn" onclick="closeForm()">
+
+    
+<script>  
+function openForm() {
+  document.getElementById("bot").style.visibility = "visible";
+  document.getElementById("closebtn").style.visibility = "visible"
+  document.getElementById("headpop").style.visibility = "visible"
+}
+function closeForm()
+{
+  document.getElementById("bot").style.visibility = "hidden";
+  document.getElementById("closebtn").style.visibility = "hidden"
+  document.getElementById("headpop").style.visibility = "hidden"
+}
+</script>
+
+</body>
+</html>  
